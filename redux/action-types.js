@@ -1,0 +1,6 @@
+export default {
+	AUTH_USER: 'AUTH_USER',
+	LOG_IN: 'LOG_IN',
+	LOG_OUT: 'LOG_OUT',
+	SET_IS_MOBILE: 'SET_IS_MOBILE',
+}

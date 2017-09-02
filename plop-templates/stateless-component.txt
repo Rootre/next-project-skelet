@@ -1,0 +1,12 @@
+import React from 'react'
+
+const {{component}} = props =>  {
+	return (
+		<div className={`{{component}}`}>
+			<p>Component {{component}}</p>
+			{props.children}
+		</div>
+	)
+}
+
+export default {{component}}
