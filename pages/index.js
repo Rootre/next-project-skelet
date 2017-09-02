@@ -81,7 +81,7 @@ class Index extends Component {
 				<h1>Skelet project</h1>
 
 				<h2>Language switcher:</h2>
-				<Languages title={translate('lang')}/>
+				<Languages/>
 
 				<h2>Responsive image:</h2>
 				<ResponsiveImage alt="Test image">
