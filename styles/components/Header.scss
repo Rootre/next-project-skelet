@@ -1,0 +1,14 @@
+.Header {
+	background-color: $cod-gray;
+	margin-bottom: $margin--default;
+	padding: 20px 10px;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	@include media(phablet) {
+		background-color: transparent;
+		max-width: $wrapper--width;
+	}
+}

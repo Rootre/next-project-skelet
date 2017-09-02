@@ -1,7 +1,7 @@
 {
-  "name": "next.js-css-global-style-test",
+  "name": "next.js-project-skelet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Boilerplate for new projects",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",

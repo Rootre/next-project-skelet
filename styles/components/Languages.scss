@@ -1,11 +1,8 @@
 .Languages {
-	float: left;
 	font-size: $font-size-small - 4;
 	padding: 0 10px 15px 30px;
-	position: relative;
 	text-align: center;
 	text-transform: uppercase;
-	z-index: 1;
 
 	li {
 		cursor: pointer;
@@ -19,9 +16,6 @@
 
 	@include media(phablet) {
 		font-size: $font-size-small;
-		left: 0;
 		padding-top: 0;
-		position: absolute;
-		top: 0;
 	}
 }

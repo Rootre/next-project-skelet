@@ -7,11 +7,11 @@ import { langs } from '../translations'
 
 class Languages extends Component {
 	render() {
-		const { dispatch, translations: { lang } } = this.props
+		const { dispatch, title } = this.props
 
 		return (
 			<div className="Languages">
-				<p>{lang}</p>
+				<p>{title}</p>
 				<ul className="slash-list">
 					{langs.map((lang, i) => {
 						return <li key={i} onClick={() => dispatch(setActiveLanguage(lang))}>{lang}</li>

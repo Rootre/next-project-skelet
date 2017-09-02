@@ -20,7 +20,6 @@
 @import "_mixins/_forms";
 @import "_mixins/_responsive";
 @import "_mixins/_typo";
-@import "_mixins/_vendors";
 
 // thirdparty plugins
 @import "plugins/_sprite";
@@ -47,7 +46,6 @@
 @import "layout/_p";
 @import "layout/_table";
 @import "layout/buttons";
-@import "layout/header";
 @import "layout/nav";
 @import "layout/strong";
 @import "layout/wrapper";
@@ -55,6 +53,7 @@
 // reusable components
 @import "components/hamburger";
 //#generated-components
+@import "components/Header";
 @import "components/Footer";
 @import "components/Menu";
 @import "components/Socials";
