@@ -40,7 +40,6 @@
 @import "layout/forms/select";
 @import "layout/forms/textarea";
 @import "layout/_headings";
-@import "layout/_img";
 @import "layout/_links";
 @import "layout/_list";
 @import "layout/_p";
@@ -53,6 +52,7 @@
 // reusable components
 @import "components/hamburger";
 //#generated-components
+@import "components/Image";
 @import "components/Header";
 @import "components/Footer";
 @import "components/Menu";

@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import Head from 'next/head'
-import {addTranslation, getTranslate, setLanguages, getActiveLanguage} from 'react-localize-redux'
-import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image'
+import {addTranslation, getTranslate, setLanguages} from 'react-localize-redux'
 
 import {nextConnect} from '../store'
 import {setIsMobile} from '../redux/actions'
 
 import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Image from '../components/Image'
 import Languages from '../components/Languages'
 import Menu from '../components/Menu'
 import Socials from '../components/Socials'
@@ -84,29 +84,18 @@ class Index extends Component {
 				<Languages/>
 
 				<h2>Responsive image:</h2>
-				<ResponsiveImage alt="Test image">
-					<ResponsiveImageSize
-						default
-						minWidth={0}
-						path={`https://placehold.it/300x200`}
-					/>
-					<ResponsiveImageSize
-						minWidth={500}
-						path={`https://placehold.it/600x400`}
-					/>
-					<ResponsiveImageSize
-						minWidth={1100}
-						path={`https://placehold.it/1200x800`}
-					/>
-				</ResponsiveImage>
+				<Image src="https://placehold.it/300x200" alt="Test image" className="hokus pokus" responsive={{
+					tablet: `https://placehold.it/600x400`,
+					desktop: `https://placehold.it/1200x800`,
+				}} />
 
 				<h2>Social icons:</h2>
 				<Socials
-					facebook={translate('socials.facebook')}
-					twitter={translate('socials.twitter')}
-					instagram={translate('socials.instagram')}
-					snapchat={translate('socials.snapchat')}
-					youtube={translate('socials.youtube')}
+					facebook={translate('Socials.facebook')}
+					twitter={translate('Socials.twitter')}
+					instagram={translate('Socials.instagram')}
+					snapchat={translate('Socials.snapchat')}
+					youtube={translate('Socials.youtube')}
 				/>
 
 				<Footer/>
@@ -119,5 +108,4 @@ class Index extends Component {
 export default nextConnect(state => ({
 	isMobile: state.global.isMobile,
 	translate: (state.locale && state.locale.languages.length) ? getTranslate(state.locale) : () => {},
-	currentLanguage: (state.locale && state.locale.languages.length) ? getActiveLanguage(state.locale) : '',
 }))(Index)

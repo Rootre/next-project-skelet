@@ -13,7 +13,7 @@ class Languages extends Component {
 
 		return (
 			<div className="Languages">
-				<p>{translate('lang')}</p>
+				<p>{translate('Languages.text')}</p>
 				<ul className="slash-list">
 					{langs.map((lang, i) => {
 						return <li className={classNames({ active: currentLanguage.code === lang })} key={i} onClick={() => dispatch(setActiveLanguage(lang))}>{lang}</li>

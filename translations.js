@@ -18,13 +18,14 @@ export const strings = {
 		],
 	},
 
-	lang: [
-		'Jazyk',
-		'Language',
-	],
+	Languages: {
+		text: [
+			'Jazyk',
+			'Language',
+		],
+	},
 
-
-	socials: {
+	Socials: {
 		facebook: [
 			'https://www.facebook.com/footshopCR/',
 			'https://www.facebook.com/footshop',
